@@ -1,41 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- ------------------------------------------------------------------- -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- WebSite Icon -->
-        <link rel="shortcut icon" href="./src/icon/book.png" type="image/x-icon">
-    <!-- Style link -->
-        <link rel="stylesheet" href="./style/Reset.css">
-        <link rel="stylesheet" href="./style/BaseStyle.css">
-    <!-- ------------------------------------------------------------------- -->
-        <title>Главная | BOOK.COM </title>
-    <!-- ------------------------------------------------------------------- -->
-</head>
+<?php
+/* Выводим именно с тем title который нам нужен */
+include("section/head.php");
+$title = 'Главная BOOK.com';
+printHeader($title);
+
+?>
+
 <body>
-    <header>
-        <!-- Header -->
-        <figure class="logo">
-            <!-- Logo img -->
-            <a href="">
-              <img src="./src/icon/book.png" alt="logo">  
-            </a>
-        </figure>
-        <h1 class="title_web">
-            <!-- Title site -->
-            BOOK.COM
-        </h1>
-        <div class="block_auto">
-            <!--  -->
-            <a href="#">Войти</a>
-            <a href="#">Зарегистрироваться</a>
-        </div>
-    </header>
+    <?
+    /* Отрисовка хедера */
+    include("section/header.php");
+    ?>
     <main>
-        <section>
-            <!-- Slider -->
-            
+        <section class="slider1">
+        <script src="/script/slider.js"></script>    
+        <!-- Slider -->
+            <div class="wrapper_slider">
+                <div class="viewport_slider">
+                    <div class="slider">
+                        <img src="/src/slider1.jpg" alt="" class="rem">
+                        <img src="/src/slider2.jpg" alt="">
+                        <img src="/src/slider3.jpg" alt="">
+                    </div>
+                    <div class="btn">
+                        <div class="btn-next"></div>
+                        <div class="btn-prev"></div>
+                    </div>
+                    <div class="nav-btn">
+                        <div class="navbtnslider"></div>
+                        <div class="navbtnslider"></div>
+                        <div class="navbtnslider"></div>
+                    </div>
+
+                </div>
+            </div>
         </section>
         <section>
             <!-- Inform -->
@@ -55,4 +53,5 @@
 
     </footer>
 </body>
+
 </html>
